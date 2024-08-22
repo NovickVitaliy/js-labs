@@ -1,6 +1,3 @@
-function process(str: string, n: number = 10){
-    console.log(`${str} ${n}`);
-}
 
 
 let firstName: string = "Vitalii";
@@ -17,5 +14,3 @@ const strs: string[] = ["one", "two", "three", "four", "five", "six"];
 console.log(`Numbers: ${numbers}`);
 console.log(`Strs: ${strs}`);
 
-process("Hello");
-process("Hello again", 19);
