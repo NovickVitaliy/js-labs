@@ -12,3 +12,8 @@ shapes.push(new Triangle(6, 8, 10));
 shapes.forEach(shape => {
     shape.showInfo();
 });
+
+const totalArea = shapes.map(x => x.getArea()).reduce((previousValue, currentValue) => currentValue + previousValue);
+console.log(`Total area of all shapes: ${totalArea}`);
+const totalPerimeters = shapes.map(x => x.getPerimeter()).reduce((previousValue, currentValue) => currentValue + previousValue);
+console.log(`Total perimeter of all shapes: ${totalPerimeters}`);

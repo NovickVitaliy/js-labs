@@ -17,4 +17,9 @@ export class Rectangle implements Shape{
 
         console.log(`Rectangle has a perimeter of ${perimeter.toPrecision(4)} and area of ${area.toPrecision(4)}`);
     }
+
+    scale(factor: number): void {
+        this.length *= factor;
+        this.width *= factor;
+    }
 }

@@ -25,4 +25,8 @@ export class Circle implements Shape {
 
         console.log(`Circle has a perimeter of ${perimeter.toPrecision(4)} and area of ${area.toPrecision(4)}`);
     }
+
+    scale(factor: number): void {
+        this.radius = this.radius * factor;
+    }
 }

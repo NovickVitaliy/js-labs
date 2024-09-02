@@ -25,4 +25,10 @@ export class Triangle implements Shape{
 
         console.log(`Triangle has a perimeter of ${perimeter.toPrecision(4)} and area of ${area.toPrecision(4)}`);
     }
+
+    scale(factor: number): void {
+        this.ab *= factor;
+        this.bc *= factor;
+        this.ac *= factor;
+    }
 }
