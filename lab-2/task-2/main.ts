@@ -13,6 +13,11 @@ shapes.forEach(shape => {
     shape.showInfo();
 });
 
+shapes.forEach(shape => {
+    shape.scale(5);
+    console.log(shape);
+})
+
 const totalArea = shapes.map(x => x.getArea()).reduce((previousValue, currentValue) => currentValue + previousValue);
 console.log(`Total area of all shapes: ${totalArea}`);
 const totalPerimeters = shapes.map(x => x.getPerimeter()).reduce((previousValue, currentValue) => currentValue + previousValue);
