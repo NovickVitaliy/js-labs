@@ -15,7 +15,7 @@ shapes.forEach(shape => {
 
 shapes.forEach(shape => {
     shape.scale(5);
-    console.log(shape);
+    shape.showInfo();
 })
 
 const totalArea = shapes.map(x => x.getArea()).reduce((previousValue, currentValue) => currentValue + previousValue);
